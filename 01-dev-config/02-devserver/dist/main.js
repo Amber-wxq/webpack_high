@@ -15,7 +15,7 @@
   \****************/
 /***/ (() => {
 
-eval("console.log(\"webpack hello\");\n\n//# sourceURL=webpack://02-devserver/./app.js?");
+eval("fetch('/api/hello')\r\n    .then(response => response.text())\r\n    .then(result => {\r\n        console.log(result)\r\n    })\n\n//# sourceURL=webpack://02-devserver/./app.js?");
 
 /***/ })
 
