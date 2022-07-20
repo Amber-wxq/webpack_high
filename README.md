@@ -11,14 +11,20 @@ Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN�
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
+1.  安装依赖
+    `npm`
+    `npm i webpack webpack-cli -D`
+    `npm i webpack-dev-server html-webpack-plugin -D`
+2.  构造配置文件
+    新建`webpack.config.js`
 3.  xxxx
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
+1.  运行启动打包,编译出dist
+    `npx webpack`
+2.  运行程序
+    `npx webpack-dev-server `
 3.  xxxx
 
 #### 参与贡献
