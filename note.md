@@ -118,4 +118,26 @@ externals:{
 ### 依赖图
 
 文件的依赖关系图
+多入口配置
+
+可视化工具bundle-analyzer
+
+`npm i webpack-bundle-analyzer -D `
+
+```
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { BundleAnalyzerPlugin } = require("webpack-bundler-analyzer");
+module.exports = {
+    mode: 'development',
+    entry: {
+        app: './src/app.js',
+        app2: './src/app2.js',
+    },
+    plugins: [
+        new HtmlWebpackPlugin(),
+        new BundleAnalyzerPlugin()
+    ]
+
+}
+```
 
